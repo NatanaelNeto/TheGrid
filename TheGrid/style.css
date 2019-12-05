@@ -37,9 +37,46 @@ h1{
 }
 
 .display-center button{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
     font-size: 18px;
-    width: 120px;
-    margin: 2px auto;
+    width: 150px;
+    padding: 2px 10px;
+    margin: 7px auto;
+    border: 2px solid #E6FFFF;
+    border-radius: 50px;
+    background: none;
+    color: #E6FFFF;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    z-index: 1;
+}
+.display-center button::before{
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    content: '';
+    color: #E6FFFF;
+    background-color: #E6FFFF;
+    width: 150px;
+    height: 0px;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.display-center button:hover{
+    color: #0C141F;
+    border:2px solid black;
+    box-shadow: 0 0 0 2px #E6FFFF;
+}
+.display-center button:hover:before{
+    height: 36px;
+}
+.display-center button:nth-of-type(1){
+    margin-top: 20px;
 }
 
 /*Links Úteis
