@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.1.2/dist/howler.min.js"></script>
     <title>The Grid</title>
 </head>
 <body>
@@ -14,9 +15,9 @@
         <div class="display-center">
 
             <h1>The Grid</h1>
-            <button onclick="btnStart()">Start game</button>
-            <button onclick="btnOpt()">Options</button>
-            <button onclick="window.location.href = 'https://natanaelneto.github.io/natanaelneto/';">/whoami</button>
+            <button onclick="mouseHover.play(); btnStart()">Start game</button>
+            <button onclick="mouseHover.play(); btnOpt()">Options</button>
+            <button onclick="mouseHover.play(); window.location.href = 'https://natanaelneto.github.io/natanaelneto/';">/whoami</button>
         </div>
     </div>
 
@@ -27,8 +28,8 @@
             <canvas id="myCanvas" width="500" height="500"></canvas>
             <div style="margin: 0 auto;">
 
-                <button onclick="btnMenu();">Menu</button>
-                <button onclick="btnOpt();">Options</button>
+                <button onclick="mouseHover.play(); btnMenu();">Menu</button>
+                <button onclick="mouseHover.play(); btnOpt();">Options</button>
             </div>
         </div>
     </div>
