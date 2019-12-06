@@ -9,15 +9,29 @@
     <title>The Grid</title>
 </head>
 <body>
-    <div class="display">
+    <div id="divMenu" class="display">
 
         <div class="display-center">
 
             <h1>The Grid</h1>
-            <button>Start game</button>
-            <button>Options</button>
-            <button>/whoami</button>
+            <button onclick="btnStart()">Start game</button>
+            <button onclick="btnOpt()">Options</button>
+            <button onclick="window.location.href = 'https://natanaelneto.github.io/natanaelneto/';">/whoami</button>
         </div>
     </div>
+
+    <div id="divGame" class="display">
+
+        <div class="display-center">
+
+            <canvas id="myCanvas" width="500" height="500"></canvas>
+            <div style="margin: 0 auto;">
+
+                <button onclick="btnMenu();">Menu</button>
+                <button onclick="btnOpt();">Options</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
